@@ -106,9 +106,7 @@ const userSale = [
         />
         <img
           src={
-            userData?.data?.profile?.img
-              ? userData?.data?.profile?.img
-              : NotFound
+            NFT3
           }
           alt=""
           className="user-profile"
