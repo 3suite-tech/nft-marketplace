@@ -55,6 +55,13 @@ function Explore(props) {
     console.log("__________", e.target.value);
     setFilter(e.target.value);
   }
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  }, []);
   return (
     <div className="explore">
     <div className="filter-section">

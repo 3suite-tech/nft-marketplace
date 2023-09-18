@@ -30,7 +30,7 @@ function Footer(props) {
 
       <div className="copyRights">
         <div className="sub-text">footer.copyrights.com</div>
-        <div className="sub-text">support@godl.com</div>
+        <div className="sub-text">contact@3suite.tech</div>
       </div>
       <div style={{ marginBottom: 10 }} />
     </div>

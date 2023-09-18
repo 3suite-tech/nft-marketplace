@@ -19,7 +19,13 @@ function CreateNft(props) {
   const [tagSelected, setTagSelected] = useState([]);
   const auth_token = localStorage.getItem("auth_token");
   const { walletAddress, chainGlobal } = useContext(web3GlobalContext);
-  
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  }, []);
   async function uploadPicture(e) {
     try {
       console.log({ picturePreview: URL.createObjectURL(e.target.files[0]) });
@@ -238,7 +244,7 @@ function CreateNft(props) {
             Suggested: 0%, 10%, 20%, 30%. Maximum is 50%
           </div>
           <input placeholder="10" className="textfield-input" />
-          <button className="cnt-wallet" style={{ width: "150px" }}>
+          <button className="cnt-wallet" style={{ width: "150px" ,background:'gray',cursor:'not-allowed'}}>
             Create NFT
           </button>
         </div>

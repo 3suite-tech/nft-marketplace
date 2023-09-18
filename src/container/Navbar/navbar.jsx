@@ -141,7 +141,7 @@ function Navbar(props) {
         setWalletAddress(publicAddress);
       }
       setModal2Open(false);
-      await defaultState(localStorage.getItem("walletAddress"), network);
+      // await defaultState(localStorage.getItem("walletAddress"), network);
     } catch (error) {
       console.error(error);
       return false;
@@ -181,7 +181,7 @@ function Navbar(props) {
       setWalletAddress(publicAddress);
       localStorage.setItem("wallet_type", "metamask");
       setModal2Open(false);
-      await defaultState(publicAddress, networkId);
+      // await defaultState(publicAddress, networkId);
     } catch (e) {
       console.error(e);
 
@@ -365,11 +365,7 @@ function Navbar(props) {
           </ul>
         </div>
         <div style={{ display: "flex", alignItems: "center" }}>
-          {window.location.pathname == "/register" && walletAddress ? (
-            <button className="cnt-wallet">
-              {getEllipsisTxt(walletAddress, 6)}
-            </button>
-          ) : walletAddress && authorizationToken ? (
+          { walletAddress  ? (
             <button className="cnt-wallet" onClick={() => navigate("/profile")}>
               {getEllipsisTxt(walletAddress, 6)}
             </button>

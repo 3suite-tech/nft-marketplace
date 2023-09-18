@@ -127,7 +127,7 @@ const userSale = [
       </div>
       <div className="mob-res" style={{ display: "flex", alignItems: "center", margin: "5px 0 0" }}>
         <div className="nft-desc" style={{ marginTop: 0, color: "#fff", fontSize: 14 }}>
-          @vaishu_shann
+          @user_id
         </div>
         <div style={{ marginLeft: 5 }} />
         <IconContext.Provider
